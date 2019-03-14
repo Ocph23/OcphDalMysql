@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ocph.DAL.MySql", "Ocph.DAL.MySql\Ocph.DAL.MySql.csproj", "{90076874-717A-45EB-AD38-23C288D74F20}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Ocph.DAL.Source", "Ocph.DAL\Ocph.DAL.Source.shproj", "{FE4BE3BE-C5CF-4E3F-B710-E5FFF9D4D172}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ocph.DAL.MySql.Core", "Ocph.DAL.MySql.Core\Ocph.DAL.MySql.Core.csproj", "{CD3A9C93-3070-45FC-B58D-08D3F0B7A420}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Ocph.DAL\Ocph.DAL.projitems*{fe4be3be-c5cf-4e3f-b710-e5fff9d4d172}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90076874-717A-45EB-AD38-23C288D74F20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90076874-717A-45EB-AD38-23C288D74F20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90076874-717A-45EB-AD38-23C288D74F20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90076874-717A-45EB-AD38-23C288D74F20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD3A9C93-3070-45FC-B58D-08D3F0B7A420}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD3A9C93-3070-45FC-B58D-08D3F0B7A420}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD3A9C93-3070-45FC-B58D-08D3F0B7A420}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD3A9C93-3070-45FC-B58D-08D3F0B7A420}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {16004F2B-040F-4E64-81A0-4DD44AD3D3BD}
+	EndGlobalSection
+EndGlobal
