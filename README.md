@@ -1,4 +1,4 @@
-# OcphDalMysql
+# Ocph.DAL.MySql
 
 Welcome to the OcphDAL for Simple  Mysql Data Access Layer !
 1. Install From Nuget
