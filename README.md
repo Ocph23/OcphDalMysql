@@ -28,7 +28,7 @@ Welcome to the OcphDAL for Simple  Mysql Data Access Layer !
                  {
                    [PrimaryKey("Id")]
                    [DbColumn("id_ktdasar")]
-                   public int Id { get; set; }
+                   public int Id? { get; set; }
 
                   [DbColumn("rootword")]
                   public string Word { get; set; }
@@ -41,56 +41,27 @@ Welcome to the OcphDAL for Simple  Mysql Data Access Layer !
             Or Use AppDatabaseModelCreator (See Code)
 
    
-4. Create Repository
+4. Create DbContext And Repository
    ***
-   Inherit from IDbContext
-
-         public class OcphDbContext : IDbContext, IDisposable
-       {
-        private string ConnectionString;
-        private IDbConnection _Connection;
-
-        public OcphDbContext(string constring)
-        {
-
-            this.ConnectionString = constring;
-        }
-
-        public OcphDbContext()
-        {
-            this.ConnectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
-        }
        
-        internal IRepository<RootWord> RoadWords { get { return new Repository<RootWord>(this); } }
-     
-        public IDbConnection Connection
-        {
-            get
-            {
-                if (_Connection == null)
-                {
-                    _Connection = new MySqlDbContext(this.ConnectionString);
-                    return _Connection;
-                }
-                else
-                {
-                    return _Connection;
-                }
-            }
-        }
+         using System;
+         using System.Configuration;
+         using System.Linq;
+         using Ocph.DAL.Provider.MySql;
+         using Ocph.DAL.Repository;
 
+         namespace yournamespace
+         {
+             public class OcphDbContext :MySqlDbConnection
+             {
+                 public OcphDbContext()
+                 {
+                      ConnectionString= ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+                 }
 
-        public void Dispose()
-        {
-            if (_Connection != null)
-            {
-                if (this.Connection.State != ConnectionState.Closed)
-                {
-                    this.Connection.Close();
-                }
-            }
-        }
-        }
+                 public IRepository<RootWord> RootWords { get { return new Repository<RootWord>(this); } }
+             }
+         }
 ***
 
 5. Query
