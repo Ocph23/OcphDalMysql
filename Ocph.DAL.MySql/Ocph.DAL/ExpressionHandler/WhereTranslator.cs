@@ -366,10 +366,11 @@ namespace Ocph.DAL.ExpressionHandler
                     }
                     else
                     {
+
+                        MemberExpression e = (MemberExpression)m.Expression;
+
                         if (m.Member.ReflectedType.Name == "DateTime")
                         {
-                            MemberExpression e = (MemberExpression)m.Expression;
-
                             if (e.Expression.NodeType == ExpressionType.Parameter)
                             {
                                 sb.Append(m.Member.Name + "(");
@@ -384,10 +385,22 @@ namespace Ocph.DAL.ExpressionHandler
                                 sb.Append(Helpers.ConverConstant(val));
                             }
 
+                            if (e.Expression.NodeType == ExpressionType.MemberAccess)
+                            {
+                                sb.Append(m.Member.Name + "(");
+                                Visit(m.Expression);
+                                sb.Append(") ");
+                            }
+                        }
 
+                        if (m.Member.ReflectedType.Name == "Nullable`1")
+                        {
+                            Visit(m.Expression);
                         }
 
                     }
+
+
 
 
                     //  Visit(m.Expression);

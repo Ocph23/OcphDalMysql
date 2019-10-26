@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.168
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29411.108
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ocph.DAL.MySql", "Ocph.DAL.MySql\Ocph.DAL.MySql.csproj", "{90076874-717A-45EB-AD38-23C288D74F20}"
-EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Ocph.DAL.Source", "Ocph.DAL\Ocph.DAL.Source.shproj", "{FE4BE3BE-C5CF-4E3F-B710-E5FFF9D4D172}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ocph.DAL.MySql.Core", "Ocph.DAL.MySql.Core\Ocph.DAL.MySql.Core.csproj", "{CD3A9C93-3070-45FC-B58D-08D3F0B7A420}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ocph.DAL.MySql", "Ocph.DAL.MySql\Ocph.DAL.MySql.csproj", "{1D214807-E808-44B9-A10B-018E7D682263}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{B6899EEA-65BF-4723-B588-A8971F81BC54}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
@@ -18,14 +18,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{90076874-717A-45EB-AD38-23C288D74F20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{90076874-717A-45EB-AD38-23C288D74F20}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{90076874-717A-45EB-AD38-23C288D74F20}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{90076874-717A-45EB-AD38-23C288D74F20}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CD3A9C93-3070-45FC-B58D-08D3F0B7A420}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CD3A9C93-3070-45FC-B58D-08D3F0B7A420}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CD3A9C93-3070-45FC-B58D-08D3F0B7A420}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CD3A9C93-3070-45FC-B58D-08D3F0B7A420}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D214807-E808-44B9-A10B-018E7D682263}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D214807-E808-44B9-A10B-018E7D682263}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D214807-E808-44B9-A10B-018E7D682263}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D214807-E808-44B9-A10B-018E7D682263}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6899EEA-65BF-4723-B588-A8971F81BC54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6899EEA-65BF-4723-B588-A8971F81BC54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6899EEA-65BF-4723-B588-A8971F81BC54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6899EEA-65BF-4723-B588-A8971F81BC54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
